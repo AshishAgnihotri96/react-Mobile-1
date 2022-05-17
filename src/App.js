@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Mobile from './components/Mobileoperating';
+import Manufacture from './components/Mobilemanu';
 
 function App() {
+  // let items = {
+  //   l1:"Android",
+  //   l2:"Blackberry",
+  //   l3:"Iphone",
+  //   l4:"Windows Phone",
+  // }
+
+  let items = [{ l1:"Android"},
+  {l2:"Blackberry"},
+  {l3:"Iphone"},
+  { l4:"Windows Phone"}]
+
+ let items1 = [{L1:"Samsung"},
+ {L2:"HTC"},
+ {L3:"Micromax"},
+ {L4:"Apple"}]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Apps">
+       <h1>Mobile Operating System</h1>
+      {items.map((e)=>(
+       <Mobile {...e}></Mobile>
+      ))}
+      <h1>Mobile Manufacture</h1>
+      {items1.map((e)=>(
+        <div>
+          <Manufacture {...e}></Manufacture>
+        </div>
+      ))}
     </div>
   );
 }
