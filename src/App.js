@@ -4,12 +4,7 @@ import Mobile from './components/Mobileoperating';
 import Manufacture from './components/Mobilemanu';
 
 function App() {
-  // let items = {
-  //   l1:"Android",
-  //   l2:"Blackberry",
-  //   l3:"Iphone",
-  //   l4:"Windows Phone",
-  // }
+ 
 
   let items = [{ l1:"Android"},
   {l2:"Blackberry"},

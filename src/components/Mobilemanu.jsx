@@ -8,4 +8,4 @@ const  Manufacture = ({L1,L2,L3,L4})=>{
     )
 }
 
-export default Manufacture
+export default Manufacture;
